@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+<!--Cabeça da Página/ Texto e título-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aqui você encontra os melhores automóveis seminovos da região.
+        Preço bom e qualidade é aqui!! Venha Seminovos BDO."> <!--Mensagem que aparece abaixo do nome do site-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./img/incon.png"> <!--Incon da aba do site-->
+        <title>Seminovos Bdo |  Compre, Venda e Financie seu automóvel</title>
+    </head>
+<body>
+    <!--Cabeçalho da página/ Logo, Search e links-->
+    <header class="cabecalho">
+        <div class="cabecalho-logo">
+            <div class="cabecalho-logo-imagem"> 
+                <a href="index.html"><img class="cabecalho-imagem" id="container-logo" src="./img/logo3.png" alt="Logo da loja- Seminovos"></a>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Marca, Modelo de carro...">
+            <div class="search-btn" href="#">
+                <img class="loupe" src="./img/1093184.svg" alt="Lupa">
+            </div>
+        </div>
+        <div class="cabecalho-menu">
+            <ul>
+                <li><a href="index.html">Comprar</a></li>
+                <li><a href="formvendas.html">Vender</a></li>
+                <li><a href="formentrar.html">Fazer login</a></li>
+                <li><a href="index.html">Contato</a></li>
+            </ul>
+        </div>
+        </header>
+    <!-- Cabeçalho com título e subtítulo do Formulário-->
+        <div>
+            <h1 id="titulo">Informações para compra</h1>
+            <p id="subtitulo">Necessárias para concluir o pedido.</p>
+            <br>
+        </div>
+        <!-- Início do formulário -->
+        <div class="container">
+    <form class="hero" action="/receber_dados.php" method="post">
+        <fieldset>
+            <!--Legenda do Formulário-->
+            <legend><strong>Preencha suas informações</strong></legend>
+          <!--Campo-->
+          <div class="form-group">
+            <label class="title-question"><strong>Nome Completo</strong></label>  
+            <div class="input-group">
+                <input  name="first_name" placeholder="Digite seu nome completo" class="form-control"  type="text">
+            </div>
+          </div>
+          <!--Campo-->
+            <div class="form-group">
+            <label class="title-question"><strong>E-Mail</strong></label>  
+                <div class="input-group">
+                    <input name="email" placeholder="Seu e-mail" class="form-control"  type="text">
+                </div>
+            </div>
+          <!--Campo-->
+          <div class="form-group">
+            <label class="title-question"><strong>Telefone</strong></label>  
+              <div class="input-group">
+            <input name="phone" placeholder="(00) 0000-0000" class="form-control" type="text">
+              </div>
+            </div>          
+          <!--Campo-->
+          <div class="form-group">
+            <label class="title-question"><strong>Logradouro e Residência</strong></label>  
+              <div class="input-group">
+            <input name="road" placeholder="Rua ** Casa **" class="form-control" type="text">
+              </div>
+            </div>          
+          <!--Campo-->
+          <div class="form-group">
+            <label class="title-question"><strong>Bairro</strong></label>  
+              <div class="input-group">
+            <input name="bairro" placeholder="Bairro ** ** **" class="form-control"  type="text">
+              </div>
+            </div>          
+          <!--Seleção-->
+          <div class="form-group"> 
+            <label class="title-question"><strong>Cidade</strong></label>
+              <div class="input-group">
+              <select name="state" class="form-control selectpicker" >
+                <option value="cidade" ><strong>Slecione a cidade que você mora</strong></option>
+                    <option>Salvador</option>
+                    <option>Feira de Santana</option>
+                    <option >Vitória Da Conquista</option>
+                    <option >Camaçari</option>
+                    <option >Juazeiro</option>
+                    <option >Itabuna</option>
+                    <option >Ilhéus</option>
+                    <option >Lauro De Freitas</option>
+                    <option >Teixeira de Freitas</option>
+                    <option>Jequié</option>
+                    <option >Barreiras</option>
+                    <option >Alagoinhas</option>
+                    <option >Porto Seguro</option>
+                    <option >Simões Filho</option>
+                    <option >Paulo Afonso</option>
+                    <option >Eunápolis</option>
+                    <option>Santo Antônio De Jesus</option>
+                    <option >Valença</option>
+                    <option >Luís Eduardo Magalhães</option>
+                    <option>Candeias</option>
+                    <option >Guanambi</option>
+                    <option>Dias D'Ávila</option>
+                    <option >Serrinha</option>
+                    <option >Jacobina</option>
+                    <option>Senhor Do Bonfim</option>
+                    <option>Itapetinga</option>
+                    <option>Irecê</option>
+                    <option>Casa Nova</option>
+                    <option>Campo Formoso</option>
+                    <option>Bom Jesus Da Lapa</option>
+                    <option>Brumado</option>
+                    <option>Conceição do Coité</option>
+                    <option>Itaberaba</option>
+                    <option>Itamaraju</option>
+                    <option>Cruz Das Almas</option>
+                    <option>Euclides Da Cunha</option>
+                    <option>Santo Amaro</option>
+                    <option>Catú</option>
+                    <option>Barra</option>
+                    <option>Jaguaquara</option>
+                    <option>Araci</option>
+                    <option>Ribeira do Pombal</option>
+                    <option>Santo Estêvão</option>
+                    <option>Xique-Xique</option>
+                    <option>Ipiaú</option>
+                    <option>Livramento De Nossa Senhora</option>
+                    <option>Monte Santo</option>
+                    <option >Macaúbas</option>
+                    <option >Tucano</option>
+                    <option>Caetité</option>
+                    <option >Mata de São João</option>
+                    <option>Maragogipe</option>
+                    <option>São Sebastião do Passé</option>
+                    <option>Seabra</option>
+                    <option>Nova Viçosa</option>
+                    <option>Vera Cruz</option>
+                    <option>Entre Rios</option>
+                    <option>Maetinga</option>
+                    <option>Dom Basílio</option>
+                    <option>Caraíbas</option>
+                    <option>Paramirim De Caraíbas</option>
+                    <option>Jussíape</option>
+                    <option>Catolândia</option>
+                    <option>Lajedinho</option>
+                    <option>Lajedão</option>
+                    <option>Ibiquera</option>
+                    <option>Dom Macedo Costa</option>
+                    <option>Caculé</option>
+                    <option>Crisópolis</option>
+                    <option>Tanhaçu</option>
+                    <option>Ourives</option>
+                    <option>Maracás</option>
+                    <option>Barra Da Estiva</option>
+                    <option>Outro...</option>
+              </select>
+            </div>
+            <!--Seleção-->
+          <div class="form-group"> 
+            <label class="title-question"><strong>Forma de Pagamento</strong></label>
+            <div class="input-group">
+            <select name="state" class="form-control selectpicker" >
+            <option value="valor do financiamento" ><strong>Slecione como irá financiar</strong></option>
+                <option>Cartão</option>
+                <option>Pix</option>
+                <option >Boleto Bancário</option>
+                <option >Serviço Comunitário</option>
+            </select>
+            </div>
+          </div>
+          <!--Campo-->
+          <div class="form-group">
+            <label class="title-question"><strong>Detalhes da forma de Pagamento</strong></label>
+            <div class="input-group">
+                <textarea class="form-control" name="comment" placeholder="Nome do Pix ** Número do cartão * **"></textarea>
+            </div>
+          </div>
+          <!--Opção-->
+          <div class="decision">
+            <label class="title-question"><strong>Possui Carteira de Motorista?</strong></label>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="hosting" value="yes" /> Sim
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="hosting" value="no" /> Não
+                </label>
+            </div>
+          </div>
+          <!-- Botão -->
+                <div>
+                    <a href="index.html" type="submit" class="btn">Continuar</a>
+                </div>
+            </fieldset>
+        </form>
+        <!--Imagem Anúncio loja-->
+        <div class="imagemanuncio">
+            <img src="./img/anúncio.png" class="anuncio">
+        </div>
+        </div>
+    <!--Rodapé da página/ Sobre a Empresa, Social e Contato-->
+        <footer>
+          <div class="rodape">
+          <div class="rodape-links">
+          <div class="sobre">
+            <h4>Nossa Empresa</h4>
+            <p>Há muito tempo te ajudando a encontrar um bom carro.<br>Desde 2004 ajudando toda região da Bahia!</p>
+          </div>
+          <div class="social">
+            <h4>Nos encontre</h4>
+          <div class="social-incons">
+            <a href="https://pt-br.facebook.com/">
+                <img src="./img/facein.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/_ifartados/">
+                <img src="./img/instalo.jpg" alt="Instagram" url="https://www.instagram.com/_ifartados/">
+            </a>
+          </div>
+          </div>
+          <div class="contato">
+            <h4>Entre em contato</h4>
+            <h6>Telefone:</h6>
+            <p>+55 77 988776655</p>
+            <h6>E-mail</h6>
+            <p>seminovosbdo@gmail.com.br</p>
+            <h6>Endereço</h6>
+            <p>Av. São Belo, Rua Montanhas, Brumado BA</p>
+          </div>
+          </div>
+          </div>
+          <div class="last">Seminovos BDO 2022 - O melhor, você encontra aqui!</div>
+      </footer>
+</body>
+</html>
